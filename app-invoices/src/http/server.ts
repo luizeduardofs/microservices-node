@@ -1,3 +1,4 @@
+import "@opentelemetry/auto-instrumentations-node/register";
 import "../broker/subscriber.ts";
 
 import { fastifyCors } from "@fastify/cors";

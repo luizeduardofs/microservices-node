@@ -1,8 +1,7 @@
 import type { Config } from "drizzle-kit";
 
-if (!process.env.DATABASE_URL) {
+if (!process.env.DATABASE_URL)
   throw new Error("DATABASE_URL must be configured.");
-}
 
 export default {
   dialect: "postgresql",
